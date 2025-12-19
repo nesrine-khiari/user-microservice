@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-microservice
+
+  config:
+    import: "configserver:http://localhost:8888"  # points to your running Config Server
+
+  profiles:
+    active: default
